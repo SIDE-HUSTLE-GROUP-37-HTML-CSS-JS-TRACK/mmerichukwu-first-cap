@@ -177,7 +177,7 @@ button:hover {
 .prod-link:hover {
   color:  hsl(0, 0%, 100%);
   transition: 600ms;
-  border-bottom-color: white;
+  border-bottom-color: hsl(0, 0%, 100%);
 }
 
 /* testimonial section */
@@ -263,11 +263,11 @@ button:hover {
 }
 
 input {
-    height: 3rem;
-    padding-left: 12px;
-    border: none;
-    border-radius: 25px;
-    background-color: hsl(0, 0%, 100%);
+  height: 3rem;
+  padding-left: 12px;
+  border: none;
+  border-radius: 25px;
+  background-color: hsl(0, 0%, 100%);
 }
 
 .input-block {
@@ -390,27 +390,27 @@ footer p {
 
 /* mobile 375px screen size stying */
 @media (max-width: 375px) {
-  /* .productive-img{
-    width: 50%;
-  } */
-
+  
+  /* resizing container boxes */
   section {
     padding: 2.5rem 2rem;
   }
 
+  /* cta section resizing */
   .cta-item {
     min-width: 50%;
     max-width: 70%;
   }
 
+  /* separating the footer section */
   .contact-info {
     padding: 25rem 3rem 1rem;
   }
 }
 
 
-/* tablet screen size stying */
-@media (max-width: 1000px) {
+/* tablet /Ipad  screen size stying */
+@media (max-width: 1024px) {
   menu-section {
     padding: 2.5rem 2rem;
   }
@@ -430,13 +430,18 @@ footer p {
   .productive-section {
     flex-direction: column;
   }
+  /* features section */
   .features-item {
     padding: 2rem 0;
   }
+
+  /* productive section */
   .productive-content {
     margin-top: 2rem;
     padding: 0;
   }
+
+  /* testimonial section */
   .test-box1-resize{
   padding: 2rem;
   }
@@ -445,6 +450,8 @@ footer p {
     margin-top: 3.5rem;
     width: 80%;
   }
+
+  /* cta section */
   .cta-item {
     width: 80%;
     padding: 2.5rem 2rem;
@@ -463,6 +470,8 @@ footer p {
     margin-top: 1rem;
     margin-left: 0;
   }
+
+  /* footer section */
   .contact-section {
     padding: 20rem 3rem 1rem;
     grid-template-columns: 100%;
